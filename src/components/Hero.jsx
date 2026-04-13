@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="space-y-6">
             <span className="text-primary font-headline font-bold tracking-[0.4em] text-sm uppercase inline-block border-l-4 border-primary pl-4">WELCOME TO MY WORLD</span>
             <h1 className="text-6xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-white">
-                Hi, I&apos;m <br/><span className="text-primary">Imad Imran</span> <br/><span className="text-4xl lg:text-5xl font-medium tracking-normal text-white/60">a Professional Web Developer</span>
+                Hi, I&apos;m <br/><span className="text-primary">Imad Imran</span> <br/><span className="text-4xl lg:text-5xl font-medium tracking-normal text-white/60">A Professional Web Developer</span>
             </h1>
             <p className="text-on-surface-variant text-xl leading-relaxed max-w-xl font-light">
                 I thrive at the intersection of logic and design. My toolkit includes React, Next.js, Node.js, and MongoDB, allowing me to build seamless end-to-end experiences. I&apos;m passionate about optimizing performance, implementing robust API structures, and ensuring every pixel serves a purpose.
