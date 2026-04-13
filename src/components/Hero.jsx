@@ -26,7 +26,7 @@ export default function Hero() {
                 Hi, I&apos;m <br/><span className="text-primary">Imad Imran</span> <br/><span className="text-4xl lg:text-5xl font-medium tracking-normal text-white/60">a Professional Web Developer</span>
             </h1>
             <p className="text-on-surface-variant text-xl leading-relaxed max-w-xl font-light">
-                I thrive at the intersection of logic and design. My toolkit includes React, Next.js, Node.js, and MongoDB, allowing me to build seamless end-to-end experiences. I’m passionate about optimizing performance, implementing robust API structures, and ensuring every pixel serves a purpose.
+                I thrive at the intersection of logic and design. My toolkit includes React, Next.js, Node.js, and MongoDB, allowing me to build seamless end-to-end experiences. I&apos;m passionate about optimizing performance, implementing robust API structures, and ensuring every pixel serves a purpose.
             </p>
           </div>
         </div>
