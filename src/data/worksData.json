@@ -1,0 +1,77 @@
+[
+  { 
+    "id": 1, 
+    "title": "eTuitionBD", 
+    "desc": "A full stack tuition management website. With different type of roles. Like Admin, Teacher, Student. Roles of different user can do different things. Admin can do everything. Teacher can manage their students. Student can find teachers and manage their tuitions.",
+    "image": "/projectsImg/eTuitionBD.png",
+    "github": "https://github.com/imadisimran/eTuitionBd-client",
+    "live": "https://etuitionbd-12154.web.app",
+    "tags": ["React", "MongoDB", "Tailwind","Express","Firebase"],
+    "challenges": [
+      {
+        "title": "Complex Role Management",
+        "desc": "Implementing secure and isolated routing for Admins, Teachers, and Students securely without tight coupling."
+      },
+      {
+        "title": "Data Synchronization",
+        "desc": "Ensuring real-time updates across multiple active sessions to prevent booking conflicts."
+      }
+    ],
+    "futurePlans": [
+      {
+        "icon": "payments",
+        "title": "Integrated Payment Gateway",
+        "desc": "Adding seamless automated subscription and tuition fee management."
+      },
+      {
+        "icon": "smart_display",
+        "title": "Live Video Classes",
+        "desc": "Native WebRTC classroom environments for remote sessions."
+      }
+    ]
+  },
+  { 
+    "id": 2, 
+    "title": "ecoTrack", 
+    "desc": "An website for managing a community of eco-friendly people. Where they can share their eco-friendly activities and inspire others.",
+    "image": "/projectsImg/ecoTrack.png",
+    "github": "https://github.com/imadisimran/eco-track-client",
+    "live": "https://eco-track-imad.netlify.app",
+    "tags": ["React", "Express", "MongoDB","Tailwind","Firebase"],
+    "challenges": [
+      {
+        "title": "Social Feed Algorithm",
+        "desc": "Designing a lightweight activity sorting algorithm that naturally ranks highly-engaged tracking metrics locally."
+      }
+    ],
+    "futurePlans": [
+      {
+        "icon": "eco",
+        "title": "Carbon Footprint Calculator",
+        "desc": "Dynamically calculating emission saves based on user activity logging."
+      }
+    ]
+  },
+  { 
+    "id": 3, 
+    "title": "Skill Swap", 
+    "desc": "A basic website for sharing skills with others",
+    "image": "/projectsImg/skillSwap.png",
+    "github": "https://github.com/imadisimran/skill-swap",
+    "live": "https://skill-swap-50c64.web.app",
+    "tags": ["React", "Firebase", "Tailwind"],
+    "challenges": [
+      {
+        "title": "Realtime Matchmaking",
+        "desc": "Building custom pairing algorithms connecting mutually beneficial skill offerings quickly."
+      }
+    ],
+    "futurePlans": [
+      {
+        "icon": "forum",
+        "title": "In-App Messaging natively",
+        "desc": "Firebase-backed direct chat layer between paired users."
+      }
+    ]
+  }
+]

@@ -4,38 +4,37 @@ import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, FreeMode } from "swiper/modules";
 import Image from "next/image";
+import Link from "next/link";
+import worksData from "@/data/worksData.json";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 
 export default function Works() {
+  const swiperRef = useRef(null);
   const swiperNavPrevRef = useRef(null);
   const swiperNavNextRef = useRef(null);
 
-  const works = [
-    { 
-      id: 1, 
-      title: "eTuitionBD", 
-      desc: "A full stack tuition management website. With different type of roles. Like Admin, Teacher, Student. Roles of different user can do different things. Admin can do everything. Teacher can manage their students. Student can find teachers and manage their tuitions.",
-      image: "/projectsImg/eTuitionBD.png",
-      tags: ["React", "MongoDB", "Tailwind","Express","Firebase"]
-    },
-    { 
-      id: 2, 
-      title: "ecoTrack", 
-      desc: "An website for managing a community of eco-friendly people. Where they can share their eco-friendly activities and inspire others.",
-      image: "/projectsImg/ecoTrack.png",
-      tags: ["React", "Express", "MongoDB","Tailwind","Firebase"]
-    },
-    { 
-      id: 3, 
-      title: "Skill Swap", 
-      desc: "A basic website for sharing skills with others",
-      image: "/projectsImg/skillSwap.png",
-      tags: ["React", "Firebase", "Tailwind"]
+  const works = worksData;
+
+  const handleMouseEnter = () => {
+    const swiper = swiperRef.current;
+    if (swiper && swiper.autoplay && !swiper.destroyed) {
+      // Safely freeze at the exact current translation without invoking prototype methods that fail in Next proxied HMR
+      if (swiper.translate) {
+        swiper.setTranslate(swiper.translate);
+      }
+      swiper.autoplay.stop();
     }
-  ];
+  };
+
+  const handleMouseLeave = () => {
+    const swiper = swiperRef.current;
+    if (swiper && swiper.autoplay && !swiper.destroyed) {
+      swiper.autoplay.start();
+    }
+  };
 
   return (
     <section id="portfolio" className="py-32 bg-surface overflow-hidden">
@@ -54,8 +53,15 @@ export default function Works() {
         </button>
       </div>
 
-      <div className="px-4 md:px-8">
+      <div 
+        className="px-4 md:px-8"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         <Swiper
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           modules={[Autoplay, Navigation, FreeMode]}
           speed={6000}
           loop={true}
@@ -71,16 +77,6 @@ export default function Works() {
             swiper.params.navigation.nextEl = swiperNavNextRef.current;
             swiper.navigation.init();
             swiper.navigation.update();
-            
-            // Native hover listeners for immediate stopping and smooth resuming
-            swiper.el.addEventListener('mouseenter', () => {
-              swiper.setTranslate(swiper.getTranslate());
-              swiper.autoplay.stop();
-            });
-
-            swiper.el.addEventListener('mouseleave', () => {
-              swiper.autoplay.start();
-            });
           }}
           className="continuous-slider py-4 !overflow-visible"
         >
@@ -108,10 +104,10 @@ export default function Works() {
                         </span>
                       ))}
                     </div>
-                    <div className="text-white bg-primary px-4 py-2.5 rounded-full cursor-pointer hover:bg-white hover:text-black hover:scale-105 transition-all shadow-[0_4px_15px_rgba(255,81,106,0.4)] flex items-center gap-2">
-                      <span className="text-xs font-bold tracking-widest uppercase">Details</span>
-                      <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
+                    <Link href={`/works/${work.id}`} className="text-white bg-primary px-4 py-2.5 rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all shadow-[0_4px_15px_rgba(255,81,106,0.4)] flex items-center gap-2">
+                       <span className="text-xs font-bold tracking-widest uppercase">Details</span>
+                       <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                    </Link>
                   </div>
                 </div>
               </div>
