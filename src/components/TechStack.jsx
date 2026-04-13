@@ -11,7 +11,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section className="py-32 px-8 bg-surface">
+    <section id="service" className="py-32 px-8 bg-surface">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/10 bg-surface-container-high/50 backdrop-blur text-xs font-bold text-white tracking-widest uppercase">

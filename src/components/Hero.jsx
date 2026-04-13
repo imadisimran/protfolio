@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto w-full px-8 grid lg:grid-cols-12 gap-12 items-center py-24">
         <div className="lg:col-span-6 relative z-10 lg:-ml-12">
           <div className="relative group">

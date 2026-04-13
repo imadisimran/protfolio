@@ -38,7 +38,7 @@ export default function Works() {
   ];
 
   return (
-    <section className="py-32 bg-surface overflow-hidden">
+    <section id="portfolio" className="py-32 bg-surface overflow-hidden">
       <div className="relative max-w-7xl mx-auto flex items-center justify-between mb-20 px-8">
         <button ref={swiperNavPrevRef} className="hidden md:flex w-16 h-16 items-center justify-center text-white/40 hover:text-white transition-colors cursor-pointer hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed z-10">
           <span className="material-symbols-outlined text-4xl" style={{ fontVariationSettings: "'wght' 200" }}>west</span>

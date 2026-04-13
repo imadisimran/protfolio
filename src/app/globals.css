@@ -55,6 +55,11 @@
   --font-label: var(--font-manrope), "Manrope", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: var(--font-body);
 }
