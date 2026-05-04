@@ -39,7 +39,7 @@ export default function Contact() {
         </div>
 
         {/* Right Column: Form */}
-        <div className="bg-surface-container-low p-8 md:p-12 rounded-[2rem] border border-white/5 shadow-2xl">
+        <div className="bg-surface-container-low p-8 md:p-12 rounded-4xl border border-white/5 shadow-2xl">
           <h3 className="text-3xl font-bold text-white mb-10">Get in touch.</h3>
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

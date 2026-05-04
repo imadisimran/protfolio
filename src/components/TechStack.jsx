@@ -31,7 +31,7 @@ export default function TechStack() {
           </div>
         </div>
         <div className="relative">
-          <div className="bg-surface-container-low p-8 rounded-[2rem] border border-white/5 shadow-inner">
+          <div className="bg-surface-container-low p-8 rounded-4xl border border-white/5 shadow-inner">
             <div className="grid grid-cols-3 gap-4 md:gap-6">
               {technologies.map((tech) => (
                 <div key={tech.name} className="tech-card aspect-square rounded-2xl flex items-center justify-center p-4 relative">

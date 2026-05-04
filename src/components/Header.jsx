@@ -69,7 +69,7 @@ export default function Header() {
           {/* <a href="#blog" onClick={(e) => handleScroll(e, 'blog')} className={linkStyle('blog')}>Blog</a> */}
           <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className={linkStyle('contact')}>Contact</a>
         </div>
-        <button className="bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-bold text-sm tracking-wide uppercase glow-button">
+        <button className="bg-linear-to-r from-primary to-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-bold text-sm tracking-wide uppercase glow-button">
             Hire Me
         </button>
       </nav>

@@ -21,12 +21,12 @@ export default async function WorkDetails({ params }) {
   }
 
   return (
-    <div className="flex h-[100dvh] w-full overflow-hidden bg-background">
+    <div className="flex h-dvh w-full overflow-hidden bg-background">
       {/* Sidebar Navigation */}
-      <aside className="w-80 h-full border-r border-white/5 flex flex-col glass-sidebar flex-shrink-0 relative z-20 overflow-y-auto">
+      <aside className="w-80 h-full border-r border-white/5 flex flex-col glass-sidebar shrink-0 relative z-20 overflow-y-auto">
         <div className="p-8 border-b border-white/5">
           <Link href="/" className="flex items-center gap-2 mb-12 hover:opacity-80 transition-opacity">
-            <Image src="/logo.png" alt="Logo" width={32} height={32} className="rounded-full shadow-[0_0_15px_rgba(255,1,79,0.3)]" unoptimized />
+            <Image src="/logo.png" alt="Company Logo" width={32} height={32} className="rounded-full shadow-[0_0_15px_rgba(255,1,79,0.3)]" />
             <div className="text-xl font-bold tracking-tighter text-white font-headline">Imad Imran</div>
           </Link>
           
@@ -42,7 +42,7 @@ export default async function WorkDetails({ params }) {
               <span className="text-on-surface-variant text-[10px] font-label uppercase tracking-widest block mb-2">Capabilities Included</span>
               <div className="flex flex-wrap gap-2">
                 {work.tags.map(tag => (
-                   <span key={tag} className="text-[#e8bcbd] font-semibold text-[11px] bg-surface-container border border-white/5 px-2.5 py-1 rounded-md">{tag}</span>
+                   <span key={tag} className="text-on-surface-variant font-semibold text-[11px] bg-surface-container border border-white/5 px-2.5 py-1 rounded-md">{tag}</span>
                 ))}
               </div>
             </div>
@@ -51,7 +51,7 @@ export default async function WorkDetails({ params }) {
           <div className="space-y-3">
             {work.live && (
               <Link 
-                className="group flex items-center justify-between p-4 rounded-xl bg-gradient-to-r from-[#ffb2b6] to-[#ff516a] text-on-primary-fixed font-bold text-sm transition-all hover:shadow-[0_0_20px_rgba(255,81,106,0.3)]" 
+                className="group flex items-center justify-between p-4 rounded-xl bg-linear-to-r from-[#ffb2b6] to-primary-container text-on-primary-fixed font-bold text-sm transition-all hover:shadow-[0_0_20px_rgba(255,81,106,0.3)]" 
                 href={work.live}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -76,16 +76,16 @@ export default async function WorkDetails({ params }) {
         
         <nav className="p-8 mt-auto">
           <div className="flex flex-col gap-4">
-            <Link className="text-[#ffb2b6] font-semibold font-headline text-sm flex items-center gap-2 group transition-all" href="/#portfolio">
+            <Link className="text-on-surface-variant font-semibold font-headline text-sm flex items-center gap-2 group transition-all" href="/#portfolio">
               <span className="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(255,81,106,0.5)]"></span>
               <span className="group-hover:translate-x-1 transition-transform">Work</span>
             </Link>
-            <Link className="text-[#e8bcbd] hover:text-white transition-colors font-headline text-sm hover:translate-x-1 block w-max" href="/#service">Services</Link>
-            <Link className="text-[#e8bcbd] hover:text-white transition-colors font-headline text-sm hover:translate-x-1 block w-max" href="/#about">About</Link>
-            <Link className="text-[#e8bcbd] hover:text-white transition-colors font-headline text-sm hover:translate-x-1 block w-max" href="/#contact">Contact</Link>
+            <Link className="text-on-surface-variant hover:text-white transition-colors font-headline text-sm hover:translate-x-1 block w-max" href="/#service">Services</Link>
+            <Link className="text-on-surface-variant hover:text-white transition-colors font-headline text-sm hover:translate-x-1 block w-max" href="/#about">About</Link>
+            <Link className="text-on-surface-variant hover:text-white transition-colors font-headline text-sm hover:translate-x-1 block w-max" href="/#contact">Contact</Link>
           </div>
           <div className="mt-12 pt-8 border-t border-white/5">
-            <p className="text-[10px] uppercase tracking-widest text-[#e8bcbd]/60">© {new Date().getFullYear()} Imad Imran</p>
+            <p className="text-[10px] uppercase tracking-widest text-on-surface-variant/60">© {new Date().getFullYear()} Imad Imran</p>
           </div>
         </nav>
       </aside>
@@ -93,8 +93,8 @@ export default async function WorkDetails({ params }) {
       {/* Main Content Area */}
       <main className="flex-1 h-full overflow-y-auto bg-surface-container-lowest relative">
         <div className="w-full h-80 md:h-96 relative overflow-hidden bg-surface-container-low border-b border-white/5">
-          <Image alt={work.title} className="object-cover opacity-60 mix-blend-screen" src={work.image} fill unoptimized />
-          <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+          <Image alt={work.title} className="object-cover opacity-60 mix-blend-screen" src={work.image} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw" priority />
+          <div className="absolute inset-0 bg-linear-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
         </div>
         
         <div className="p-8 lg:p-12 lg:pb-24">
@@ -146,7 +146,7 @@ export default async function WorkDetails({ params }) {
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {work.challenges.map((challenge, index) => (
-                      <div key={index} className="p-5 rounded-xl bg-surface-container-high border border-white/5 hover:border-primary/30 transition-colors">
+                      <div key={challenge.title} className="p-5 rounded-xl bg-surface-container-high border border-white/5 hover:border-primary/30 transition-colors">
                         <div className="flex items-start gap-4">
                           <span className="text-primary font-bold text-xs opacity-50">0{index + 1}</span>
                           <div>
@@ -171,7 +171,7 @@ export default async function WorkDetails({ params }) {
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {work.futurePlans.map((plan, index) => (
-                      <div key={index} className="p-5 rounded-xl bg-surface-container-high/50 border border-white/5">
+                      <div key={plan.title} className="p-5 rounded-xl bg-surface-container-high/50 border border-white/5">
                         <span className="material-symbols-outlined text-primary text-xl mb-3">{plan.icon || 'star'}</span>
                         <h3 className="text-sm font-bold text-white mb-2">{plan.title}</h3>
                         <p className="text-xs text-on-surface-variant leading-relaxed">

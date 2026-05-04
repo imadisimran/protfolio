@@ -38,7 +38,7 @@ export default function Education() {
 
         <div className="relative max-w-5xl mx-auto">
           {/* Central Vertical Line (Faded ends for smooth transition) */}
-          <div className="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-[1px] bg-gradient-to-b from-transparent via-primary/30 to-transparent hidden md:block"></div>
+          <div className="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-px bg-linear-to-b from-transparent via-primary/30 to-transparent hidden md:block"></div>
 
           <div className="space-y-20 md:space-y-32">
             {educationData.map((data) => (
@@ -57,7 +57,7 @@ export default function Education() {
 
                     {/* Middle Timeline Node */}
                     <div className="relative flex justify-center items-center w-8 order-1 md:order-2">
-                       <div className="w-8 h-8 rounded-full border-[2px] border-primary/50 bg-[#131315] flex items-center justify-center relative z-10 shadow-[0_0_20px_rgba(255,81,106,0.3)]">
+                       <div className="w-8 h-8 rounded-full border-2 border-primary/50 bg-[#131315] flex items-center justify-center relative z-10 shadow-[0_0_20px_rgba(255,81,106,0.3)]">
                          <div className="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_10px_rgba(255,81,106,0.8)]"></div>
                        </div>
                     </div>
@@ -76,7 +76,7 @@ export default function Education() {
 
                     {/* Middle Timeline Node */}
                     <div className="relative flex justify-center items-center w-8 order-1 md:order-2">
-                       <div className="w-8 h-8 rounded-full border-[2px] border-primary/50 bg-[#131315] flex items-center justify-center relative z-10 shadow-[0_0_20px_rgba(255,81,106,0.3)]">
+                       <div className="w-8 h-8 rounded-full border-2 border-primary/50 bg-[#131315] flex items-center justify-center relative z-10 shadow-[0_0_20px_rgba(255,81,106,0.3)]">
                          <div className="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_10px_rgba(255,81,106,0.8)]"></div>
                        </div>
                     </div>

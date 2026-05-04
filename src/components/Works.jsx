@@ -78,17 +78,17 @@ export default function Works() {
             swiper.navigation.init();
             swiper.navigation.update();
           }}
-          className="continuous-slider py-4 !overflow-visible"
+          className="continuous-slider py-4 overflow-visible!"
         >
           {works.map((work) => (
             <SwiperSlide key={work.id} style={{ width: "auto" }}>
-              <div className="w-[300px] md:w-[400px] h-[450px] md:h-[550px] rounded-[2rem] overflow-hidden relative flex flex-col bg-surface-container-high border border-white/5 shadow-xl transition-transform duration-500 hover:-translate-y-2 group">
+              <div className="w-[300px] md:w-[400px] h-[450px] md:h-[550px] rounded-4xl overflow-hidden relative flex flex-col bg-surface-container-high border border-white/5 shadow-xl transition-transform duration-500 hover:-translate-y-2 group">
                 <div className="p-8 pb-0 flex-1 relative z-10">
                   <h3 className="text-white text-3xl font-headline font-semibold tracking-tight">{work.title}</h3>
                   <p className="text-on-surface-variant text-sm mt-4 leading-relaxed pr-4">{work.desc}</p>
                 </div>
                 <div className="relative h-[60%] w-full mt-auto">
-                  <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-surface-container-high to-transparent z-10 pointer-events-none"></div>
+                  <div className="absolute inset-x-0 top-0 h-32 bg-linear-to-b from-surface-container-high to-transparent z-10 pointer-events-none"></div>
                   <Image 
                     src={work.image} 
                     alt={work.title} 

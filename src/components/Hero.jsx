@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="lg:col-span-6 relative z-10 lg:-ml-12">
           <div className="relative group">
             <div className="absolute -inset-10 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
-            <div className="relative aspect-[3/4] w-full bg-surface-container-high rounded-3xl overflow-hidden border-b-[12px] border-primary shadow-2xl">
+            <div className="relative aspect-3/4 w-full bg-surface-container-high rounded-3xl overflow-hidden border-b-12 border-primary shadow-2xl">
               <Image 
                 alt="Professional portrait" 
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105 hover:scale-100" 

@@ -21,7 +21,7 @@ export default function About() {
           <p className="mb-12">
               I specialize in the MERN stack (MongoDB, Express, React, Node.js) and love the challenge of bridging the gap between design and technical implementation. When I&apos;m not debugging, you&apos;ll likely find me working on a project where I need to learn something new or exploring new ways to optimize web performance. I like to use AI but I hate that AI will be the master of my projects.
           </p>
-          <button className="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary-container py-6 rounded-2xl font-black text-lg tracking-[0.2em] uppercase flex items-center justify-center gap-4 glow-button clear-both">
+          <button className="w-full bg-linear-to-r from-primary to-primary-container text-on-primary-container py-6 rounded-2xl font-black text-lg tracking-[0.2em] uppercase flex items-center justify-center gap-4 glow-button clear-both">
             <span>DOWNLOAD RESUME</span>
             <span className="material-symbols-outlined text-2xl">download</span>
           </button>

@@ -102,7 +102,7 @@ export default function Footer() {
       </div>
       
       {/* Orange/Theme Accent Bar matching image (bottom absolute strip) */}
-      <div className="w-full h-1 bg-gradient-to-r from-onyx-accent via-primary to-onyx-accent opacity-80 shadow-[0_-2px_15px_rgba(255,1,79,0.3)]"></div>
+      <div className="w-full h-1 bg-linear-to-r from-onyx-accent via-primary to-onyx-accent opacity-80 shadow-[0_-2px_15px_rgba(255,1,79,0.3)]"></div>
     </footer>
   );
 }
