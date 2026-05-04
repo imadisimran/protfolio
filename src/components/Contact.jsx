@@ -1,3 +1,5 @@
+import ContactForm from "./ContactForm";
+
 export default function Contact() {
   return (
     <section id="contact" className="py-32 px-8 bg-surface-container-lowest">
@@ -39,49 +41,7 @@ export default function Contact() {
         </div>
 
         {/* Right Column: Form */}
-        <div className="bg-surface-container-low p-8 md:p-12 rounded-4xl border border-white/5 shadow-2xl">
-          <h3 className="text-3xl font-bold text-white mb-10">Get in touch.</h3>
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-on-surface-variant/80 uppercase tracking-widest px-1">Your name <span className="text-onyx-accent">*</span></label>
-                <input className="w-full bg-surface-container border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-onyx-accent/50 focus:ring-1 focus:ring-onyx-accent/50 transition-all placeholder:text-white/20" placeholder="Enter name" type="text"/>
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-on-surface-variant/80 uppercase tracking-widest px-1">Your email <span className="text-onyx-accent">*</span></label>
-                <input className="w-full bg-surface-container border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-onyx-accent/50 focus:ring-1 focus:ring-onyx-accent/50 transition-all placeholder:text-white/20" placeholder="Enter email" type="email"/>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-on-surface-variant/80 uppercase tracking-widest px-1">Your company</label>
-                <input className="w-full bg-surface-container border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-onyx-accent/50 focus:ring-1 focus:ring-onyx-accent/50 transition-all placeholder:text-white/20" placeholder="Company name" type="text"/>
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-on-surface-variant/80 uppercase tracking-widest px-1">Budget Range</label>
-                <input className="w-full bg-surface-container border border-white/5 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-onyx-accent/50 focus:ring-1 focus:ring-onyx-accent/50 transition-all placeholder:text-white/20" placeholder="In USD" type="text"/>
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <label className="text-sm font-bold text-on-surface-variant/80 uppercase tracking-widest px-1">Message</label>
-              <textarea className="w-full bg-surface-container border border-white/5 rounded-xl px-4 py-3 text-white h-32 resize-none focus:outline-none focus:border-onyx-accent/50 focus:ring-1 focus:ring-onyx-accent/50 transition-all placeholder:text-white/20" placeholder="Type here..."></textarea>
-              <div className="text-right">
-                <span className="text-[10px] text-white/20 font-bold uppercase tracking-widest">0/250</span>
-              </div>
-            </div>
-
-            <div className="pt-4">
-              <button 
-                type="button" 
-                className="bg-onyx-accent hover:opacity-90 text-white px-10 py-4 rounded-xl font-extrabold text-sm tracking-widest uppercase transition-all shadow-lg shadow-onyx-accent/20 w-full md:w-auto ml-auto block"
-              >
-                Send
-              </button>
-            </div>
-          </form>
-        </div>
+        <ContactForm />
       </div>
     </section>
   );

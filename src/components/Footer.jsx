@@ -97,7 +97,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="w-full bg-[#171719] border-t border-white/5 py-5 text-center px-4">
         <p className="text-xs text-on-surface-variant font-bold tracking-wider">
-          Copyright © {new Date().getFullYear()}, Omorpro, All Rights Reserved.
+          Copyright © {new Date().getFullYear()}, Imad Imran, All Rights Reserved.
         </p>
       </div>
       

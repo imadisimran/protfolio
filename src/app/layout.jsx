@@ -1,5 +1,7 @@
 import { Plus_Jakarta_Sans, Manrope } from "next/font/google";
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -12,8 +14,8 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "Omorpro - Digital Curator",
-  description: "Portfolio of Omor Rahman, Professional UI/Ux Designer.",
+  title: "Imad Imran - Web Developer",
+  description: "Portfolio of Imad Imran, Professional Web Developer.",
 };
 
 export default function RootLayout({ children }) {
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${plusJakartaSans.variable} ${manrope.variable} bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden antialiased`}>
         {children}
+        <ToastContainer position="bottom-right" theme="dark" />
       </body>
     </html>
   );
