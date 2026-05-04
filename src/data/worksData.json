@@ -73,5 +73,36 @@
         "desc": "Firebase-backed direct chat layer between paired users."
       }
     ]
+  },
+  { 
+    "id": 4, 
+    "title": "Care BD", 
+    "desc": "A modern, comprehensive medical and care service booking platform. It allows users to browse medical services, specialized care courses, and book appointments seamlessly. The application features a robust authentication system, real-time database integration, and a beautiful responsive UI.",
+    "image": "/projectsImg/care-bd.png",
+    "github": "https://github.com/imadisimran/care-bd2",
+    "live": "https://care-bd.vercel.app/",
+    "tags": ["Next.js", "Tailwind CSS", "MongoDB", "Firebase"],
+    "challenges": [
+      {
+        "title": "Secure Service Booking",
+        "desc": "Building an end-to-end booking flow allowing users to schedule medical and care services reliably with real-time updates."
+      },
+      {
+        "title": "Automated Notifications",
+        "desc": "Integrating automated email confirmations using Nodemailer and React Email for immediate booking feedback."
+      }
+    ],
+    "futurePlans": [
+      {
+        "icon": "medical_services",
+        "title": "Advanced Patient Records",
+        "desc": "Implementing a comprehensive system to track patient medical histories securely."
+      },
+      {
+        "icon": "payments",
+        "title": "Payment Gateway Integration",
+        "desc": "Adding seamless automated service fee management and invoicing directly within the app."
+      }
+    ]
   }
 ]
