@@ -27,11 +27,11 @@ export async function sendContactEmail(data) {
         company={company}
         budget={budget}
         message={message}
-      />
+      />,
     );
 
     const options = {
-      from: process.env.SMTP_EMAIL,
+      from: `"Portfolio-Imad-Imran" <${process.env.SMTP_EMAIL}>`,
       to: email,
       subject: `New Contact Inquiry from ${name}`,
       html: emailHtml,
@@ -42,6 +42,9 @@ export async function sendContactEmail(data) {
     return { success: true };
   } catch (error) {
     console.error("Failed to send contact email:", error);
-    return { success: false, error: "Failed to send email. Please try again later." };
+    return {
+      success: false,
+      error: "Failed to send email. Please try again later.",
+    };
   }
 }

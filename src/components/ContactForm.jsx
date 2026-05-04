@@ -122,7 +122,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="bg-onyx-accent hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed text-white px-10 py-4 rounded-xl font-extrabold text-sm tracking-widest uppercase transition-all shadow-lg shadow-onyx-accent/20 w-full md:w-auto ml-auto flex justify-center items-center gap-2"
+            className="bg-onyx-accent hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed text-white px-10 py-4 rounded-xl font-extrabold text-sm tracking-widest uppercase transition-all shadow-lg shadow-onyx-accent/20 w-full md:w-auto ml-auto flex justify-center items-center gap-2 cursor-pointer"
           >
             {isSubmitting ? (
               <>
